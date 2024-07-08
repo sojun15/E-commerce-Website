@@ -1,0 +1,181 @@
+/* it is used for common variable part */
+:root{
+    --lenght : 2rem;
+}
+
+/* it is used for header part  */
+header{
+    display: flex;
+    gap: var(--lenght);
+    justify-content: center;
+    position: fixed;
+    top: 0.5rem;
+    right: 0;
+    left: 0;
+}
+
+.images{
+    margin-top: 4rem;
+}
+
+/* it is used for search bar option  */
+#search-bar{
+    width: 40rem;
+    border-radius: 10%;
+    height: var(--lenght);
+    text-align: center;
+    font-weight: 50rem;
+}
+
+/* it is used for filpkart image  */
+.flp{
+    margin: 0;
+    height: 50px;
+    width: 200px;
+}
+
+
+/* it is used for login signUp section anchor tags  */
+.login-signup{
+    text-decoration: none;
+    font-size: var(--lenght);
+}
+
+/* it is used for footer section anchor tags  */
+.footer-anchor{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+/* it is used for anchor tags hover  */
+.footer-anchor:hover{
+    text-decoration: underline;
+}
+
+/* it is used for social media icon  */
+.icon{
+    font-size: 1.5rem;
+    padding: .5rem;
+}
+
+/* it is used footer class div  */
+.footer-class{
+    width: 20rem;
+    color: white;
+    border: .2rem dotted white;
+}
+
+.media{
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    display: flex;
+    gap: .5rem;
+    text-align: center;
+    background-color: #1c211e;
+}
+
+/* it is animation parent class */
+.animation{
+    height: 150px;
+    animation-name: image;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* animation part starts here */
+@keyframes image {
+    0%{
+        background-image: url(images/img5.webp);
+    }
+    25%{
+        background-image: url(images/img2.webp);
+    }
+    50%{
+        background-image: url(images/img6.webp);
+    }
+    75%{
+        background-image: url(images/img1.webp);
+    }
+    100%{
+        background-image: url(images/img.webp);
+    }
+}
+/* animation part ends here */
+
+/* display flexibility task starts here  */
+@media only screen and (max-width:768px) {
+    header{
+        display: flex;
+        gap: .5rem;
+        justify-content: center;
+        
+    }
+    .login-signup{
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    #search-bar{
+        width: 100px;
+        height: 20px;
+        border-radius: 10%;
+        text-align: center;
+        font-weight: .11rem;
+    }
+    .flp{
+        margin: 0;
+        height: 30px;
+        width: 100px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    footer{
+        display: grid;
+        grid-template-columns: auto ;
+    }
+    h2{
+        margin-bottom: .2rem;
+    }
+
+    .footer-class p{
+        margin:0;
+        
+    }
+    .footer-class p{
+        width: 100%;
+        
+    }
+}
+/* display flexibility task starts here  */
+
+/* it is product item child class */
+.item{
+    text-align: center;
+    border: .1rem dotted;
+}
+
+/* it is product item parent class */
+.items{
+    overflow-x: scroll;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: .5rem;
+    margin: .5rem;
+}
+
+button{
+    margin: .5rem;
+    width: 5rem;
+    height: 2rem;
+    background-color: #1c211e;
+    color: white;
+}
