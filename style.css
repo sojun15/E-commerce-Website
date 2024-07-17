@@ -139,20 +139,16 @@ footer{
 
 @media only screen and (max-width:600px) {
     footer{
-        display: grid;
-        grid-template-columns: auto ;
+        display: flex;
+        flex-direction: column;
     }
     h2{
         margin-bottom: .2rem;
     }
 
     .footer-class p{
-        margin:0;
-        
-    }
-    .footer-class p{
         width: 100%;
-        
+        margin:0;
     }
 }
 /* display flexibility task starts here  */
